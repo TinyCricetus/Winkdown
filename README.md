@@ -1,2 +1,2 @@
 # Winkdown
-An editor
+An richtext editor base on prosemirror.
