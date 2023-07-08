@@ -8,7 +8,7 @@ const config: Webpack.Configuration = {
 
   devtool: 'inline-source-map',
 
-  entry: path.resolve(__dirname, './src/main.tsx'),
+  entry: path.resolve(__dirname, './src/index.tsx'),
 
   output: {
     path: path.resolve(__dirname, './dist'),
@@ -24,6 +24,10 @@ const config: Webpack.Configuration = {
       {
         test: /\.tsx?$/,
         use: ['ts-loader']
+      },
+      {
+        test: /\.s?css$/,
+        use: ['style-loader', 'css-loader']
       }
     ]
   },

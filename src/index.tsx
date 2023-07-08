@@ -1,10 +1,5 @@
 import { createRoot } from 'react-dom/client'
-
-function App() {
-  return (
-    <div>This is a prosemirror editor</div>
-  )
-}
+import { App } from './app.component'
 
 const root = createRoot(document.getElementById('app')!)
 root.render(<App />)
