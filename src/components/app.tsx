@@ -1,12 +1,13 @@
+import { useEffect, useRef } from 'react'
+import './app.css'
+import './prose-mirror.css'
+
 import { schema } from "prosemirror-schema-basic"
 import { EditorState } from "prosemirror-state"
 import { EditorView } from "prosemirror-view"
 import { undo, redo, history } from 'prosemirror-history'
 import { keymap } from 'prosemirror-keymap'
 import { baseKeymap } from 'prosemirror-commands'
-import { useEffect, useRef } from 'react'
-
-import './app.component.css'
 
 export function App() {
   const editorRef = useRef<HTMLDivElement | null>(null)
@@ -17,7 +18,7 @@ export function App() {
       plugins: [
         history(),
         keymap(baseKeymap),
-        keymap({"Mod-z": undo, "Mod-y": redo}),
+        keymap({ "Mod-z": undo, "Mod-y": redo }),
       ]
     })
 
@@ -33,9 +34,8 @@ export function App() {
   }, [])
 
   return (
-    <div
-      className="winkdown-container"
-      ref={editorRef}>
+    <div className="winkdown-container">
+      <div ref={editorRef} className="winkdown"></div>
     </div>
   )
 }

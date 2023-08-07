@@ -1,0 +1,19 @@
+.winkdown-container {
+  width: 1000px;
+  height: 500px;
+  border: solid 1px gray;
+  border-radius: 5px;
+  margin: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+@font-face {
+  font-family: "Monaco";
+  src: url(../fonts/Monaco-1.ttf);
+}
+
+.winkdown {
+  background-color: #ddd;
+  font-family: 'Monaco' 'Microsoft YaHei' 'Courier New', Courier, monospace; 
+}
