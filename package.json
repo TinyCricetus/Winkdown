@@ -4,7 +4,7 @@
   "description": "",
   "private": "true",
   "scripts": {
-    "start": "webpack server"
+    "dev": "webpack server"
   },
   "keywords": [],
   "author": "",
