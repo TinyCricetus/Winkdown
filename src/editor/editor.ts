@@ -1,18 +1,17 @@
-import { baseKeymap } from "prosemirror-commands"
-import { undo, redo, history } from "prosemirror-history"
-import { keymap } from "prosemirror-keymap"
-import { schema } from "prosemirror-schema-basic"
 import { EditorState } from "prosemirror-state"
 import { EditorView } from "prosemirror-view"
+import { schema } from 'prosemirror-markdown'
+import { exampleSetup } from 'prosemirror-example-setup'
 
 export function createEditor(root: HTMLElement) {
   const state = EditorState.create({
     schema,
-    plugins: [
-      history(),
-      keymap(baseKeymap),
-      keymap({ "Mod-z": undo, "Mod-y": redo }),
-    ]
+    plugins: exampleSetup({ schema })
+    // [
+    //   history(),
+    //   keymap(baseKeymap),
+    //   keymap({ "Mod-z": undo, "Mod-y": redo }),
+    // ]
   })
 
   const view = new EditorView(root, {
