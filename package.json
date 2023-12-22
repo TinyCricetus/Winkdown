@@ -24,15 +24,9 @@
     "webpack-dev-server": "^4.15.1"
   },
   "dependencies": {
-    "prosemirror-commands": "^1.5.2",
-    "prosemirror-example-setup": "^1.2.2",
-    "prosemirror-history": "^1.3.2",
-    "prosemirror-keymap": "^1.2.2",
-    "prosemirror-markdown": "^1.11.2",
-    "prosemirror-schema-basic": "^1.2.2",
-    "prosemirror-state": "^1.4.3",
-    "prosemirror-view": "^1.31.5",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "slate": "^0.101.5",
+    "slate-react": "^0.101.5"
   }
 }

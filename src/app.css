@@ -15,5 +15,20 @@
 
 .winkdown {
   background-color: #ddd;
-  font-family: 'Monaco' 'Microsoft YaHei' 'Courier New', Courier, monospace; 
+  font-family: 'Monaco', 'Microsoft YaHei', 'Courier New', Courier, monospace;
+  outline: none;
+  padding: 10px;
+}
+
+.list-item {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.order {
+  border: 1px solid gray;
+  font-size: 10px;
+  border-radius: 3px;
+  margin: 0 3px;
 }
