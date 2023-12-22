@@ -1,5 +1,5 @@
 import { useMemo, KeyboardEvent } from 'react'
-import './app.css'
+import './winkdown.css'
 import { Editable, RenderElementProps, Slate, withReact } from 'slate-react'
 import { Descendant, Editor, Element, Transforms, createEditor } from 'slate'
 import { ListElement } from '../constants'
@@ -43,7 +43,7 @@ function ListElement(props: RenderElementProps) {
   )
 }
 
-export function App() {
+export function Winkdown() {
   const editor = useMemo(() => withReact(createEditor()), [])
 
   function onKeyDown(event: KeyboardEvent) {
